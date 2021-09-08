@@ -1,12 +1,12 @@
 @import "../base/variables";
 /* Seccion */
 section {
+    .estilo-titulos-carousel {
+        font-weight: bold;
+    }
+
     .contenedor-noticias {
         margin-left: 15px !important;
-        .estilo-titulos-carousel {
-            font-weight: bold;
-        }
-
         margin:auto;
 
         .titulo-principal {

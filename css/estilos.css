@@ -3,7 +3,7 @@
 /* Variable */
 body {
   font-family: "Roboto Condensed", sans-serif;
-  background-image: url(https://fondosmil.com/fondo/26562.jpg);
+  background-image: url(https://img1.wsimg.com/isteam/ip/7c4893dc-b5f3-4562-8995-0e45610fc077/1014.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -22,12 +22,12 @@ body {
 /* Fin encabezado */
 /* Variable */
 /* Seccion */
+section .estilo-titulos-carousel {
+  font-weight: bold;
+}
 section .contenedor-noticias {
   margin-left: 15px !important;
   margin: auto;
-}
-section .contenedor-noticias .estilo-titulos-carousel {
-  font-weight: bold;
 }
 section .contenedor-noticias .titulo-principal {
   text-align: center;
