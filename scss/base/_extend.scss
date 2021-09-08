@@ -1,0 +1,19 @@
+    /* Extend basico para cumplir con el trabajo pedido*/
+%ajusteDeContenedor {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+%ajusteFotoNoticias{
+    width: 3em;
+    height: 2em;
+    border-radius: 50px; 
+}
+
+
+.contenedor-noticias{
+    background-color: white;
+    @extend %ajusteDeContenedor
+};
+.fotos-noticias{
+    @extend %ajusteFotoNoticias
+};

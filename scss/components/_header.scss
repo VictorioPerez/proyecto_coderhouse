@@ -1,0 +1,10 @@
+@import "../base/variables";
+/* ENCABEZADO */
+.encabezado{
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+}
+/* Fin encabezado */

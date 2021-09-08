@@ -1,0 +1,14 @@
+/* Mapas */
+$tituloNoticia: (
+   margin-top: 80px,
+
+   colores: #C84C0C,
+   bg-color: #5D93FD,
+   centrado: center,
+);
+.tituloh1-noticia{
+    margin-top: map-get($tituloNoticia,margin-top);
+    text-align: map-get($tituloNoticia ,centrado );
+    color: map-get($tituloNoticia , colores );
+    background-color: map-get($tituloNoticia, bg-color );
+}
