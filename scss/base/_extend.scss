@@ -4,14 +4,12 @@
     margin-left: 15px;
 }
 %ajusteFotoNoticias{
-    width: 3em;
-    height: 2em;
-    border-radius: 50px; 
+    width: 4,5em;
+    height: 50px;
+    border-radius: 25px; 
 }
 
-
 .contenedor-noticias{
-    background-color: white;
     @extend %ajusteDeContenedor
 };
 .fotos-noticias{

@@ -1,10 +1,31 @@
 @import "../base/variables";
+
 /* ENCABEZADO */
-.encabezado{
-    margin-top: $margin-top;
-    margin-bottom: $margin-bottom;
-    .dropdown:hover .dropdown-menu{
-        display: block;
+.encabezado {
+    .logoPortal{
+        width: 50%;
+        height: 50%;
+    }
+    .navbarMenu {
+        background-color: #E40017;
+
+        .navbarUl {
+            margin-left: 80px;
+            margin-right: 80px;
+
+            .navbarSeccions {
+                color: white;
+
+                &:hover {
+                    transition: all 1s;
+                    background-color: black;
+                    border-bottom: 2px solid white;
+                    border-spacing: 0px;
+                }
+            }
+        }
     }
 }
+
+
 /* Fin encabezado */

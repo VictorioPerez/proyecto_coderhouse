@@ -1,22 +1,31 @@
 @import "../base/variables";
+
 /* Seccion */
 section {
-    .estilo-titulos-carousel {
-        font-weight: bold;
+    .tituloPrincipal {
+        text-align: $aling-text-center;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        color: #0F1618;
+
+        &::first-letter {
+            color: $colorRed;
+        }
+    }
+
+    .carrusel {
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+
+        .estilo-titulos-carousel {
+            font-weight: bold;
+            
+        }
     }
 
     .contenedor-noticias {
         margin-left: 15px !important;
-        margin:auto;
-
-        .titulo-principal {
-            text-align: $aling-text-center;
-            margin-top: 80px;
-
-            &::first-letter {
-                color: $colorRed;
-            }
-        }
+        margin: auto;
 
         .titulo-h3 {
             text-align: $aling-text-center;
@@ -29,33 +38,49 @@ section {
         .ul-noticias {
             list-style: none;
             flex-direction: column;
-            padding: 0%;
-            .li-noticias{
-                transition: $transicionNoticias;
+            padding-right: 25px;
+            padding-left: 0%;
+            padding-top: 0%;
+            padding-bottom: 0%;
+            border-right: 2px solid #0F1618;
 
-                &:hover{
-                    transform: $escalaTransicion
-                }
+
+            .li-noticias {
+                border-bottom: 1px solid #ccc;
+                margin-top: 20px;
+                margin-bottom: 20px;
+
             }
+
             .titulo-noticias {
                 padding-bottom: 15px;
+                text-align: justify;
             }
         }
 
 
         .noticia {
-            color: black;
+            color: #0F1618;
             text-decoration: none;
             font-size: 20px;
 
+            .foto-noticias {
+                display: block;
+                background-position: center;
+                background-size: cover;
+
+            }
         }
-        .listas-podcast{
+
+        .listas-podcast {
             list-style: none;
             flex-direction: column;
-            padding: 0%;
-            padding-left: 50px;
-            border-left: 2px solid black;
+            padding-top: 12px;
+            padding-left: 35px;
+            padding-right: 35px;
+
         }
+
         .carousel .item {
             height: 300px;
         }
@@ -66,5 +91,9 @@ section {
             left: 0;
             min-height: 300px;
         }
+    }
+
+    .newsletter {
+        background-color: #E40017;
     }
 }

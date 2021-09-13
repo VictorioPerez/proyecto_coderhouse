@@ -36,52 +36,38 @@
 <body>
     <!-- Encabezado -->
     <header class="encabezado">
-       
+
         <!-- Navegación y listas de las secciónes de la página -->
-        <div class="container-fluid px-0">
-            <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top barra-navegacion">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                         <!-- Logo -->
-                        <img src="img/123-1235044_joystick-joystick-png-icon-transparent-png.png" alt="logo" width="35" height="35" class="d-inline-block align-text-top">
-                       Portal Joystick</a>
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
-                        data-bs-target="#MenuNavegacion">
+        
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark mb-5 mx-auto navbarMenu">
+                    <a class="navbar-brand img-nav " href="index.html"><img src="..."
+                        alt="logo de portal joystick"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div id="MenuNavegacion" class="collapse navbar-collapse">
-                        <ul class="navbar-nav ms-3">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                    href="index.html">Inicio</a></li>
-                            <li class="nav-item"> <a class="nav-link active" aria-current="page"
-                                    href="noticias.html">Noticias</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="Esports.html" role="button"
-                                    data-bs-toggle="dropdown">
-                                    Esports
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li> <a class="nav-link active" aria-current="page" href="LoL.html"
-                                            class="dropdown-items">League of legends</a></li>
-                                    <li> <a class="nav-link active" aria-current="page" href="Csgo.html"
-                                            class="dropdown-items">CSGO</a></li>
-                                    <li> <a class="nav-link active" aria-current="page" href="RainbowSix.html"
-                                            class="dropdown-items">Rainbow Six Siege</a></li>
-                                    <div class="dropdown-divider"></div>
-                                    <li> <a class="nav-link active" aria-current="page" href="Otros.html"
-                                            class="dropdown-items">Otros</a></li>
-                                    <div class="dropdown-divider"></div>
-                                </ul>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav navbarUl">
+                            <li class="nav-item mx-3">
+                                <a class="nav-link navbarSeccions" aria-current="page" href="index.html">Inicio</a>
                             </li>
-                            <li class="nav-item"> <a class="nav-link active" aria-current="page"
-                                    href="Contactos.html">Contacto</a></li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link navbarSeccions" href="noticias.html">Noticias</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link navbarSeccions" href="Esports.html">Esports</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link navbarSeccions" href="Lanzamientos.html">Lanzamientos</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link navbarSeccions" href="Contactos.html">Newsletter</a>
+                            </li>
                         </ul>
                     </div>
-                </div>
             </nav>
-        </div>
     </header>
-
     <!-- Sección -->
     <section class="seccion">
         <h2 class="tituloh2-noticia">Ultimos lanzamientos</h2>

@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
 /* Body del proyecto */
 /* Variable */
 body {
-  font-family: "Roboto Condensed", sans-serif;
-  background-image: url(https://img1.wsimg.com/isteam/ip/7c4893dc-b5f3-4562-8995-0e45610fc077/1014.jpg);
+  font-family: "Vollkorn", serif;
+  background-color: #f1f4f7;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -11,30 +11,49 @@ body {
 
 /* Variable */
 /* ENCABEZADO */
-.encabezado {
-  margin-top: 25px;
-  margin-bottom: 25px;
+.encabezado .logoPortal {
+  width: 50%;
+  height: 50%;
 }
-.encabezado .dropdown:hover .dropdown-menu {
-  display: block;
+.encabezado .navbarMenu {
+  background-color: #E40017;
+}
+.encabezado .navbarMenu .navbarUl {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.encabezado .navbarMenu .navbarUl .navbarSeccions {
+  color: white;
+}
+.encabezado .navbarMenu .navbarUl .navbarSeccions:hover {
+  transition: all 1s;
+  background-color: black;
+  border-bottom: 2px solid white;
+  border-spacing: 0px;
 }
 
 /* Fin encabezado */
 /* Variable */
 /* Seccion */
-section .estilo-titulos-carousel {
+section .tituloPrincipal {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  color: #0F1618;
+}
+section .tituloPrincipal::first-letter {
+  color: red;
+}
+section .carrusel {
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+}
+section .carrusel .estilo-titulos-carousel {
   font-weight: bold;
 }
 section .contenedor-noticias {
   margin-left: 15px !important;
   margin: auto;
-}
-section .contenedor-noticias .titulo-principal {
-  text-align: center;
-  margin-top: 80px;
-}
-section .contenedor-noticias .titulo-principal::first-letter {
-  color: red;
 }
 section .contenedor-noticias .titulo-h3 {
   text-align: center;
@@ -45,28 +64,37 @@ section .contenedor-noticias .titulo-h3::first-letter {
 section .contenedor-noticias .ul-noticias {
   list-style: none;
   flex-direction: column;
-  padding: 0%;
+  padding-right: 25px;
+  padding-left: 0%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  border-right: 2px solid #0F1618;
 }
 section .contenedor-noticias .ul-noticias .li-noticias {
-  transition: all 2s;
-}
-section .contenedor-noticias .ul-noticias .li-noticias:hover {
-  transform: scale(0.9);
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 section .contenedor-noticias .ul-noticias .titulo-noticias {
   padding-bottom: 15px;
+  text-align: justify;
 }
 section .contenedor-noticias .noticia {
-  color: black;
+  color: #0F1618;
   text-decoration: none;
   font-size: 20px;
+}
+section .contenedor-noticias .noticia .foto-noticias {
+  display: block;
+  background-position: center;
+  background-size: cover;
 }
 section .contenedor-noticias .listas-podcast {
   list-style: none;
   flex-direction: column;
-  padding: 0%;
-  padding-left: 50px;
-  border-left: 2px solid black;
+  padding-top: 12px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 section .contenedor-noticias .carousel .item {
   height: 300px;
@@ -77,15 +105,33 @@ section .contenedor-noticias .item img {
   left: 0;
   min-height: 300px;
 }
+section .newsletter {
+  background-color: #E40017;
+}
 
 /* Variable */
 /* Pie de pagina */
 .pieDePagina {
   align-items: center;
-  margin-left: 125px;
-  margin-right: 125px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 25px;
+  padding-bottom: 0px;
+  background-color: #E40017;
 }
-.pieDePagina h4 {
+.pieDePagina .newsletter {
+  padding-top: 25px;
+  color: white;
+}
+.pieDePagina .newsletter .inputNewsLetter {
+  border: 1px solid white;
+  border-radius: 25px;
+}
+.pieDePagina .newsletter .botonNewsLetter {
+  border: 1px solid white;
+  border-radius: 25px;
+}
+.pieDePagina .copyright {
   padding-top: 2em;
   display: flex;
   justify-content: flex-start;
@@ -98,7 +144,9 @@ section .contenedor-noticias .item img {
   display: flex;
   justify-content: center;
   font-size: 20px;
-  margin: 50px;
+  margin: 0%;
+  padding: 0%;
+  margin-top: 25px;
 }
 .pieDePagina .navegacionRedes {
   width: 1.9375rem;
@@ -121,13 +169,9 @@ section .contenedor-noticias .item img {
 }
 
 .fotos-noticias {
-  width: 3em;
-  height: 2em;
-  border-radius: 50px;
-}
-
-.contenedor-noticias {
-  background-color: white;
+  width: 4, 5em;
+  height: 50px;
+  border-radius: 25px;
 }
 
 /* Mapas */
