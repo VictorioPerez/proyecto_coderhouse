@@ -303,7 +303,7 @@ section .contenedor-noticias .item img {
   text-align: left;
 }
 
-.seccionEsport .tituloEsport {
+.sectionEsport .tituloEsport {
   margin-top: 200px;
 }
 
