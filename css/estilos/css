@@ -33,7 +33,6 @@ body {
 }
 
 /* Fin encabezado */
-/* Variable */
 /* Seccion Index*/
 section .tituloPrincipal {
   text-align: center;
@@ -302,6 +301,10 @@ section .contenedor-noticias .item img {
 }
 .seccionNovedades .ul-noticias .li-noticias .descripcion-noticias {
   text-align: left;
+}
+
+.seccionEsport .tituloEsport {
+  margin-top: 200px;
 }
 
 /*# sourceMappingURL=css.map */
