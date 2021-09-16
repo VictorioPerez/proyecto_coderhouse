@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
 @import "../scss/components/body";
 @import "../scss/components/header";
-@import "../scss/components/section";
+@import "../scss/components/sectionIndex";
 @import "../scss/components/footer";
 @import "base/variables";
 @import "base/extend";
-@import "base/mapas"
-
+@import "base/mapas";
+@import "../scss/components/sectionNoticias";
+@import "../scss/components/sectionEsports"
