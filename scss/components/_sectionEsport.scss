@@ -1,5 +1,44 @@
 .sectionEsport{
-    .tituloEsport{
-        margin-top: 200px;
+.tituloEsport{
+        text-align: $aling-text-center;
+        margin-top: 5rem;
+        margin-bottom: 1.25rem;
+        color: #0F1618;
+
+        &::first-letter {
+            color: $colorRed;
+        }
+}
+    .contenedorEsports{
+        margin-top: 3.125rem;
+    }
+}
+.sectionEsportNoticias{
+    .novedadesEsport{
+        
+        position: relative;
+        text-align: center;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 480px;
+            height: 2px;
+            background-color: black;
+            top: 0.6em;
+            left: 2em;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 480px;
+            height: 2px;
+            background-color: black;
+            top: 0.6em;
+            right: 2em;
+        }
+        &::first-letter{
+            color: $colorRed;
+        }
     }
 }

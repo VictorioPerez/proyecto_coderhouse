@@ -25,6 +25,9 @@
         font-weight: 700;
         transition: .3s;
 
+        .primerTitular{
+            padding-top: 30px
+        }
         .primerTitular a {
             font-size: 35px;
 
@@ -83,7 +86,7 @@
 .seccionNovedades {
     border: 2px solid whitesmoke;
     border-radius: 10px;
-    box-shadow:  5px 5px 30px $colorRed;
+    box-shadow:  5px 5px 30px rgb(129, 119, 119);
     padding: 20px;
     margin-left: 100px;
     margin-right: 100px;
@@ -123,13 +126,16 @@
                             position:relative;
                             left: 10px;
                             object-fit: cover;
+                            margin-top: 15px;
+                            
                             &:hover{
                                 filter: blur(1px);
                             }
                         }
                         .titulo-noticias{
                             text-align: left;
-                            margin-bottom: 20px;   
+                            margin-bottom: 20px; 
+                            margin-top: 5px;  
                                 &:hover{
                                     text-decoration:underline;
                                 } 

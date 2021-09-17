@@ -1,19 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 /* Body del proyecto */
 /* Variable */
 body {
-  font-family: "Vollkorn", serif;
+  font-family: "Ubuntu", sans-serif;
   background-color: #fefeff;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-/* Variable */
 /* ENCABEZADO */
 .encabezado .logoPortal {
-  width: 50%;
-  height: 50%;
+  width: 35%;
+  height: auto;
 }
 .encabezado .navbarMenu {
   background-color: #E40017;
@@ -33,12 +32,11 @@ body {
 }
 
 /* Fin encabezado */
-/* Variable */
 /* Seccion Index*/
 section .tituloPrincipal {
   text-align: center;
-  margin-top: 80px;
-  margin-bottom: 20px;
+  margin-top: 5rem;
+  margin-bottom: 1.25rem;
   color: #0F1618;
 }
 section .tituloPrincipal::first-letter {
@@ -82,7 +80,7 @@ section .contenedor-noticias .ul-noticias .titulo-noticias {
 section .contenedor-noticias .noticia {
   color: #0F1618;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.13rem;
 }
 section .contenedor-noticias .noticia .foto-noticias {
   display: block;
@@ -106,7 +104,6 @@ section .contenedor-noticias .item img {
   min-height: 300px;
 }
 
-/* Variable */
 /* Pie de pagina */
 .pieDePagina {
   align-items: center;
@@ -201,6 +198,9 @@ section .contenedor-noticias .item img {
   font-weight: 700;
   transition: 0.3s;
 }
+.seccionNoticias .noticiasPrincipales .primerTitular {
+  padding-top: 30px;
+}
 .seccionNoticias .noticiasPrincipales .primerTitular a {
   font-size: 35px;
 }
@@ -248,7 +248,7 @@ section .contenedor-noticias .item img {
 .seccionNovedades {
   border: 2px solid whitesmoke;
   border-radius: 10px;
-  box-shadow: 5px 5px 30px #E40017;
+  box-shadow: 5px 5px 30px #817777;
   padding: 20px;
   margin-left: 100px;
   margin-right: 100px;
@@ -288,6 +288,8 @@ section .contenedor-noticias .item img {
   padding: auto;
   position: relative;
   left: 10px;
+  object-fit: cover;
+  margin-top: 15px;
 }
 .seccionNovedades .ul-noticias .li-noticias .vinculoNoticias .imagen-noticias:hover {
   filter: blur(1px);
@@ -295,12 +297,52 @@ section .contenedor-noticias .item img {
 .seccionNovedades .ul-noticias .li-noticias .vinculoNoticias .titulo-noticias {
   text-align: left;
   margin-bottom: 20px;
+  margin-top: 5px;
 }
 .seccionNovedades .ul-noticias .li-noticias .vinculoNoticias .titulo-noticias:hover {
   text-decoration: underline;
 }
 .seccionNovedades .ul-noticias .li-noticias .descripcion-noticias {
   text-align: left;
+}
+
+.sectionEsport .tituloEsport {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 1.25rem;
+  color: #0F1618;
+}
+.sectionEsport .tituloEsport::first-letter {
+  color: #E40017;
+}
+.sectionEsport .contenedorEsports {
+  margin-top: 3.125rem;
+}
+
+.sectionEsportNoticias .novedadesEsport {
+  position: relative;
+  text-align: center;
+}
+.sectionEsportNoticias .novedadesEsport::after {
+  content: "";
+  position: absolute;
+  width: 480px;
+  height: 2px;
+  background-color: black;
+  top: 0.6em;
+  left: 2em;
+}
+.sectionEsportNoticias .novedadesEsport::before {
+  content: "";
+  position: absolute;
+  width: 480px;
+  height: 2px;
+  background-color: black;
+  top: 0.6em;
+  right: 2em;
+}
+.sectionEsportNoticias .novedadesEsport::first-letter {
+  color: #E40017;
 }
 
 /*# sourceMappingURL=estilos.css.map */
