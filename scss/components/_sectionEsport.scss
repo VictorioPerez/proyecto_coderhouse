@@ -1,44 +1,247 @@
-.sectionEsport{
-.tituloEsport{
+.sectionEsportPrincipal {
+    .tituloPrincipalNoticiaEsport {
         text-align: $aling-text-center;
-        margin-top: 5rem;
-        margin-bottom: 1.25rem;
+        margin-top: 80px;
+        margin-bottom: 5px;
         color: #0F1618;
 
         &::first-letter {
             color: $colorRed;
         }
-}
-    .contenedorEsports{
-        margin-top: 3.125rem;
+
+    }
+
+    margin-top: 4rem;
+
+    .noticiasPrincipales {
+        /* SECCION - NOTICIAS - NOTICIAS PPALES */
+        position: relative;
+        width: 100%;
+        padding-top: 0px;
+        margin-bottom: 40px;
+
+        display: block;
+        width: 100%;
+        color: $colorWhite;
+        font-size: 40px;
+        font-weight: 700;
+        transition: .3s;
+
+        .primerTitular {
+            padding-top: 30px
+        }
+
+        .primerTitular a {
+            font-size: 35px;
+
+        }
+    }
+
+    .titular-img {
+        position: relative;
+        height: 100%;
+    }
+
+    .titularCaptions {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 15px 10px 15px 20px;
+        background-image: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, .3), rgba(0, 0, 0, .9));
+        display: flex;
+        align-items: flex-end;
+
+        a {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: .3s;
+            letter-spacing: 1px;
+            color: $colorWhite;
+
+            &:hover {
+                color: $colorRed
+            }
+
+        }
+
+        .spanEsport1 {
+            border-radius: 5px;
+            background-color: $colorRed;
+            height: 10%;
+            width: 12%;
+
+            .textoSpan {
+                font-size: 0.5em;
+            }
+        }
+
+        .spanEsport2 {
+            border-radius: 5px;
+            background-color: $colorRed;
+            height: 15%;
+            width: 38%;
+
+            .textoSpan {
+                font-size: 0.3em;
+            }
+        }
+
+        .spanEsport3 {
+            border-radius: 5px;
+            background-color: $colorRed;
+            height: 15%;
+            width: 12%;
+
+            .textoSpan {
+                font-size: 0.3em;
+            }
+        }
+
+        .spanEsport4 {
+            border-radius: 5px;
+            background-color: $colorRed;
+            height: 12%;
+            width: 12%;
+
+            .textoSpan {
+                font-size: 0.3em;
+            }
+        }
+
+
+    }
+
+    .titularTitulo {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        color: $colorWhite;
+        font-size: 40px;
+        font-weight: 700;
+        transition: .3s;
+        margin: 0px !important;
+        ;
+    }
+
+    .titularMargin {
+        margin-top: 25px;
     }
 }
-.sectionEsportNoticias{
-    .novedadesEsport{
-        
+
+.sectionEsport {
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px rgb(129, 119, 119);
+
+    .borderLine {
+        border-top: 1px solid #ccc;
+    }
+
+    .tituloEsport {
+        text-align: $aling-text-center;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+        color: #0F1618;
         position: relative;
-        text-align: center;
+
+        &::first-letter {
+            color: $colorRed;
+        }
 
         &::after {
             content: '';
             position: absolute;
-            width: 480px;
+            width: 350px;
             height: 2px;
             background-color: black;
             top: 0.6em;
-            left: 2em;
+            left: 55px
         }
+
         &::before {
             content: '';
             position: absolute;
-            width: 480px;
+            width: 350px;
             height: 2px;
             background-color: black;
             top: 0.6em;
-            right: 2em;
+            right: 55px
         }
-        &::first-letter{
+
+        &::first-letter {
             color: $colorRed;
         }
+
     }
+
+    .contenedorEsportNoticia {
+        padding: 1.5em;
+.img-hover-zoom{
+    overflow: hidden;
+    border-radius: 15px;
+        .imgEsport {
+            
+            transition: transform .5s ease;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+        .tituloNoticiaEsport {
+            &::first-letter {
+                color: $colorRed;
+            }
+
+            .noticiaEsport {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .subnoticias {
+
+            text-align: $aling-text-center;
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+            color: #0F1618;
+            position: relative;
+    
+            &::first-letter {
+                color: $colorRed;
+            }
+    
+            &::after {
+                content: '';
+                position: absolute;
+                width:440px;
+                height: 2px;
+                background-color: black;
+                top: 0.6em;
+                left: 0px;
+            }
+    
+            &::before {
+                content: '';
+                position: absolute;
+                width:440px;
+                height: 2px;
+                background-color: black;
+                top: 0.6em;
+                right: 0px;
+            }
+    
+            &::first-letter {
+                color: $colorRed;
+            }
+        }
 }

@@ -30,6 +30,9 @@ body {
   border-bottom: 2px solid white;
   border-spacing: 0px;
 }
+.encabezado .navbarMenu .navbarUl .dropdown:hover .dropdown-menu {
+  display: block;
+}
 
 /* Fin encabezado */
 /* Seccion Index*/
@@ -297,51 +300,218 @@ section .contenedor-noticias .item img {
 .seccionNovedades .ul-noticias .li-noticias .vinculoNoticias .titulo-noticias {
   text-align: left;
   margin-bottom: 20px;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 .seccionNovedades .ul-noticias .li-noticias .vinculoNoticias .titulo-noticias:hover {
   text-decoration: underline;
+}
+.seccionNovedades .ul-noticias .li-noticias .vinculoNoticias .titulo-noticias::first-letter {
+  color: #E40017;
 }
 .seccionNovedades .ul-noticias .li-noticias .descripcion-noticias {
   text-align: left;
 }
 
+.sectionEsportPrincipal {
+  margin-top: 4rem;
+}
+.sectionEsportPrincipal .tituloPrincipalNoticiaEsport {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 5px;
+  color: #0F1618;
+}
+.sectionEsportPrincipal .tituloPrincipalNoticiaEsport::first-letter {
+  color: #E40017;
+}
+.sectionEsportPrincipal .noticiasPrincipales {
+  /* SECCION - NOTICIAS - NOTICIAS PPALES */
+  position: relative;
+  width: 100%;
+  padding-top: 0px;
+  margin-bottom: 40px;
+  display: block;
+  width: 100%;
+  color: #f1f4f7;
+  font-size: 40px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.sectionEsportPrincipal .noticiasPrincipales .primerTitular {
+  padding-top: 30px;
+}
+.sectionEsportPrincipal .noticiasPrincipales .primerTitular a {
+  font-size: 35px;
+}
+.sectionEsportPrincipal .titular-img {
+  position: relative;
+  height: 100%;
+}
+.sectionEsportPrincipal .titularCaptions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 15px 10px 15px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+  display: flex;
+  align-items: flex-end;
+}
+.sectionEsportPrincipal .titularCaptions a {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #f1f4f7;
+}
+.sectionEsportPrincipal .titularCaptions a:hover {
+  color: #E40017;
+}
+.sectionEsportPrincipal .titularCaptions .spanEsport1 {
+  border-radius: 5px;
+  background-color: #E40017;
+  height: 10%;
+  width: 12%;
+}
+.sectionEsportPrincipal .titularCaptions .spanEsport1 .textoSpan {
+  font-size: 0.5em;
+}
+.sectionEsportPrincipal .titularCaptions .spanEsport2 {
+  border-radius: 5px;
+  background-color: #E40017;
+  height: 15%;
+  width: 38%;
+}
+.sectionEsportPrincipal .titularCaptions .spanEsport2 .textoSpan {
+  font-size: 0.3em;
+}
+.sectionEsportPrincipal .titularCaptions .spanEsport3 {
+  border-radius: 5px;
+  background-color: #E40017;
+  height: 15%;
+  width: 12%;
+}
+.sectionEsportPrincipal .titularCaptions .spanEsport3 .textoSpan {
+  font-size: 0.3em;
+}
+.sectionEsportPrincipal .titularCaptions .spanEsport4 {
+  border-radius: 5px;
+  background-color: #E40017;
+  height: 12%;
+  width: 12%;
+}
+.sectionEsportPrincipal .titularCaptions .spanEsport4 .textoSpan {
+  font-size: 0.3em;
+}
+.sectionEsportPrincipal .titularTitulo {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: #f1f4f7;
+  font-size: 40px;
+  font-weight: 700;
+  transition: 0.3s;
+  margin: 0px !important;
+}
+.sectionEsportPrincipal .titularMargin {
+  margin-top: 25px;
+}
+
+.sectionEsport {
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px #817777;
+}
+.sectionEsport .borderLine {
+  border-top: 1px solid #ccc;
+}
 .sectionEsport .tituloEsport {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   color: #0F1618;
+  position: relative;
 }
 .sectionEsport .tituloEsport::first-letter {
   color: #E40017;
 }
-.sectionEsport .contenedorEsports {
-  margin-top: 3.125rem;
+.sectionEsport .tituloEsport::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 2px;
+  background-color: black;
+  top: 0.6em;
+  left: 55px;
 }
-
-.sectionEsportNoticias .novedadesEsport {
-  position: relative;
+.sectionEsport .tituloEsport::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 2px;
+  background-color: black;
+  top: 0.6em;
+  right: 55px;
+}
+.sectionEsport .tituloEsport::first-letter {
+  color: #E40017;
+}
+.sectionEsport .contenedorEsportNoticia {
+  padding: 1.5em;
+}
+.sectionEsport .contenedorEsportNoticia .img-hover-zoom {
+  overflow: hidden;
+  border-radius: 15px;
+}
+.sectionEsport .contenedorEsportNoticia .img-hover-zoom .imgEsport {
+  transition: transform 0.5s ease;
+}
+.sectionEsport .contenedorEsportNoticia .img-hover-zoom .imgEsport:hover {
+  transform: scale(1.2);
+}
+.sectionEsport .contenedorEsportNoticia .tituloNoticiaEsport::first-letter {
+  color: #E40017;
+}
+.sectionEsport .contenedorEsportNoticia .tituloNoticiaEsport .noticiaEsport {
+  text-decoration: none;
+  color: black;
+}
+.sectionEsport .contenedorEsportNoticia .tituloNoticiaEsport .noticiaEsport:hover {
+  text-decoration: underline;
+}
+.sectionEsport .subnoticias {
   text-align: center;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: #0F1618;
+  position: relative;
 }
-.sectionEsportNoticias .novedadesEsport::after {
+.sectionEsport .subnoticias::first-letter {
+  color: #E40017;
+}
+.sectionEsport .subnoticias::after {
   content: "";
   position: absolute;
-  width: 480px;
+  width: 440px;
   height: 2px;
   background-color: black;
   top: 0.6em;
-  left: 2em;
+  left: 0px;
 }
-.sectionEsportNoticias .novedadesEsport::before {
+.sectionEsport .subnoticias::before {
   content: "";
   position: absolute;
-  width: 480px;
+  width: 440px;
   height: 2px;
   background-color: black;
   top: 0.6em;
-  right: 2em;
+  right: 0px;
 }
-.sectionEsportNoticias .novedadesEsport::first-letter {
+.sectionEsport .subnoticias::first-letter {
   color: #E40017;
 }
 

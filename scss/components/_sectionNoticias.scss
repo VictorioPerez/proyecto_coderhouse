@@ -135,10 +135,13 @@
                         .titulo-noticias{
                             text-align: left;
                             margin-bottom: 20px; 
-                            margin-top: 5px;  
+                            margin-top: 20px;  
                                 &:hover{
                                     text-decoration:underline;
-                                } 
+                                }
+                                &::first-letter{
+                                    color: $colorRed;
+                                }
                         }
                 }
                 .descripcion-noticias{
