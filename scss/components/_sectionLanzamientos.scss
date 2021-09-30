@@ -1,0 +1,64 @@
+.logosCards {
+    width: 1.5em;
+}
+
+.seccionLanzamientosPrinciales {
+    .card {
+        width: 30rem;
+    }
+
+    .tituloLanzamientosPrincipales {
+        text-align: $aling-text-center;
+        margin-top: 5rem;
+        margin-bottom: 5px;
+        color: black;
+
+        &::first-letter {
+            color: $colorRed;
+        }
+    }
+
+    .cardLanzamientoPrincial {
+        border: hidden 1px black;
+        color: black;
+
+        .card-body {
+            border: 1px solid rgb(199, 199, 199);
+        }
+    }
+}
+
+.seccionLanzamientos {
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px rgb(129, 119, 119);
+    .card {
+        width: 18rem;
+    }
+    .tituloLanzamientos {
+        position: relative;
+
+        &::first-letter {
+            color: $colorRed;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 23.125rem;
+            height: 2px;
+            background-color: black;
+            top: 0.6em;
+            left: 10px
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 23.125rem;
+            height: 2px;
+            background-color: black;
+            top: 0.6em;
+            right: 10px
+        }
+    }
+}

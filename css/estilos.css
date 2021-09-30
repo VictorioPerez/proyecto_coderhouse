@@ -3,7 +3,7 @@
 /* Variable */
 body {
   font-family: "Ubuntu", sans-serif;
-  background-color: #fefeff;
+  background-color: #FFFAFA;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -457,9 +457,6 @@ section .contenedor-noticias .item img {
   top: 0.6em;
   right: 55px;
 }
-.sectionEsport .tituloEsport::first-letter {
-  color: #E40017;
-}
 .sectionEsport .contenedorEsportNoticia {
   padding: 1.5em;
 }
@@ -513,6 +510,63 @@ section .contenedor-noticias .item img {
 }
 .sectionEsport .subnoticias::first-letter {
   color: #E40017;
+}
+
+.logosCards {
+  width: 1.5em;
+}
+
+.seccionLanzamientosPrinciales .card {
+  width: 30rem;
+}
+.seccionLanzamientosPrinciales .tituloLanzamientosPrincipales {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5px;
+  color: black;
+}
+.seccionLanzamientosPrinciales .tituloLanzamientosPrincipales::first-letter {
+  color: #E40017;
+}
+.seccionLanzamientosPrinciales .cardLanzamientoPrincial {
+  border: hidden 1px black;
+  color: black;
+}
+.seccionLanzamientosPrinciales .cardLanzamientoPrincial .card-body {
+  border: 1px solid #c7c7c7;
+}
+
+.seccionLanzamientos {
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px #817777;
+}
+.seccionLanzamientos .card {
+  width: 18rem;
+}
+.seccionLanzamientos .tituloLanzamientos {
+  position: relative;
+}
+.seccionLanzamientos .tituloLanzamientos::first-letter {
+  color: #E40017;
+}
+.seccionLanzamientos .tituloLanzamientos::after {
+  content: "";
+  position: absolute;
+  width: 23.125rem;
+  height: 2px;
+  background-color: black;
+  top: 0.6em;
+  left: 10px;
+}
+.seccionLanzamientos .tituloLanzamientos::before {
+  content: "";
+  position: absolute;
+  width: 23.125rem;
+  height: 2px;
+  background-color: black;
+  top: 0.6em;
+  right: 10px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
