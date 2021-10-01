@@ -25,6 +25,40 @@
         .card-body {
             border: 1px solid rgb(199, 199, 199);
         }
+
+        .contenedorImagen {
+            .imagenLanzamiento {
+                opacity: 1;
+                display: block;
+                transition: .5s ease;
+
+            }
+
+            .contenedorNota {
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 15%;
+                left: 35%;
+                text-align: center;
+            }
+
+            &:hover .imagenLanzamiento {
+                filter: blur(2px);
+            }
+
+            &:hover .contenedorNota {
+                opacity: 1;
+            }
+
+            .nota {
+                background-color: $colorRed;
+                color: white;
+                font-size: 16px;
+                padding: 16px 32px;
+                border-radius: 50px;
+            }
+        }
     }
 }
 
@@ -32,19 +66,25 @@
     border: 2px solid whitesmoke;
     border-radius: 10px;
     box-shadow: 5px 5px 30px rgb(129, 119, 119);
+
     .card {
         width: 18rem;
     }
-    .cardLanzamientosVariados{
-        box-shadow: 5px 5px 30px  #000000;
+
+    .cardLanzamientosVariados {
+        box-shadow: 5px 5px 30px #000000;
     }
-    .cardPlaystation{
-        box-shadow: 5px 5px 30px  #006FCD;
+
+    .cardPlaystation {
+        box-shadow: 5px 5px 30px #006FCD;
     }
-    .cardXbox{
-        box-shadow: 5px 5px 30px  #107C10;
+
+    .cardXbox {
+        box-shadow: 5px 5px 30px #107C10;
     }
-    
+    .cardNintendo{
+        box-shadow: 5px 5px 30px #e60012;
+    }
 
     .tituloLanzamientos {
         position: relative;
@@ -52,6 +92,7 @@
         &::first-letter {
             color: $colorRed;
         }
+
         &::after {
             content: '';
             position: absolute;
@@ -72,14 +113,15 @@
             right: 10px
         }
     }
-    .titulosExclusivosPSN{
+
+    .titulosExclusivosPSN {
         margin: 20px;
         position: relative;
 
         &::first-letter {
             color: #006FCD;
         }
-    
+
         &::after {
             content: '';
             position: absolute;
@@ -87,17 +129,18 @@
             height: 2px;
             background-color: #006FCD;
             top: 0.6em;
-            left: 280px
+            left: 290px
         }
     }
-    .titulosExclusivosXbox{
+
+    .titulosExclusivosXbox {
         margin: 20px;
         position: relative;
 
         &::first-letter {
             color: #107C10;
         }
-    
+
         &::after {
             content: '';
             position: absolute;
@@ -108,5 +151,63 @@
             left: 210px
         }
     }
-  
+    
+    .titulosExclusivosNintendo {
+        margin: 20px;
+        position: relative;
+
+        &::first-letter {
+            color: #e60012;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 49rem;
+            height: 2px;
+            background-color: #e60012;
+            top: 0.6em;
+            left: 260px
+        }
+    }
+
+    .cardLanzamientosVariados,
+    .cardPlaystation,
+    .cardXbox,
+    .cardNintendo{
+        .contenedorImagen {
+            .imagenLanzamiento {
+                opacity: 1;
+                display: block;
+                transition: .5s ease;
+
+            }
+
+            .contenedorNota {
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 9%;
+                left: 25%;
+                text-align: center;
+            }
+
+            &:hover .imagenLanzamiento {
+                filter: blur(2px);
+            }
+
+            &:hover .contenedorNota {
+                opacity: 1;
+            }
+
+            .nota {
+                background-color: $colorRed;
+                color: white;
+                font-size: 0.8rem;
+                padding: 16px 32px;
+                border-radius: 50px;
+            }
+        }
+
+    }
 }

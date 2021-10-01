@@ -535,6 +535,32 @@ section .contenedor-noticias .item img {
 .seccionLanzamientosPrinciales .cardLanzamientoPrincial .card-body {
   border: 1px solid #c7c7c7;
 }
+.seccionLanzamientosPrinciales .cardLanzamientoPrincial .contenedorImagen .imagenLanzamiento {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+}
+.seccionLanzamientosPrinciales .cardLanzamientoPrincial .contenedorImagen .contenedorNota {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  text-align: center;
+}
+.seccionLanzamientosPrinciales .cardLanzamientoPrincial .contenedorImagen:hover .imagenLanzamiento {
+  filter: blur(2px);
+}
+.seccionLanzamientosPrinciales .cardLanzamientoPrincial .contenedorImagen:hover .contenedorNota {
+  opacity: 1;
+}
+.seccionLanzamientosPrinciales .cardLanzamientoPrincial .contenedorImagen .nota {
+  background-color: #E40017;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 50px;
+}
 
 .seccionLanzamientos {
   border: 2px solid whitesmoke;
@@ -552,6 +578,9 @@ section .contenedor-noticias .item img {
 }
 .seccionLanzamientos .cardXbox {
   box-shadow: 5px 5px 30px #107C10;
+}
+.seccionLanzamientos .cardNintendo {
+  box-shadow: 5px 5px 30px #e60012;
 }
 .seccionLanzamientos .tituloLanzamientos {
   position: relative;
@@ -591,7 +620,7 @@ section .contenedor-noticias .item img {
   height: 2px;
   background-color: #006FCD;
   top: 0.6em;
-  left: 280px;
+  left: 290px;
 }
 .seccionLanzamientos .titulosExclusivosXbox {
   margin: 20px;
@@ -608,6 +637,63 @@ section .contenedor-noticias .item img {
   background-color: #107C10;
   top: 0.6em;
   left: 210px;
+}
+.seccionLanzamientos .titulosExclusivosNintendo {
+  margin: 20px;
+  position: relative;
+}
+.seccionLanzamientos .titulosExclusivosNintendo::first-letter {
+  color: #e60012;
+}
+.seccionLanzamientos .titulosExclusivosNintendo::after {
+  content: "";
+  position: absolute;
+  width: 49rem;
+  height: 2px;
+  background-color: #e60012;
+  top: 0.6em;
+  left: 260px;
+}
+.seccionLanzamientos .cardLanzamientosVariados .contenedorImagen .imagenLanzamiento,
+.seccionLanzamientos .cardPlaystation .contenedorImagen .imagenLanzamiento,
+.seccionLanzamientos .cardXbox .contenedorImagen .imagenLanzamiento,
+.seccionLanzamientos .cardNintendo .contenedorImagen .imagenLanzamiento {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+}
+.seccionLanzamientos .cardLanzamientosVariados .contenedorImagen .contenedorNota,
+.seccionLanzamientos .cardPlaystation .contenedorImagen .contenedorNota,
+.seccionLanzamientos .cardXbox .contenedorImagen .contenedorNota,
+.seccionLanzamientos .cardNintendo .contenedorImagen .contenedorNota {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 9%;
+  left: 25%;
+  text-align: center;
+}
+.seccionLanzamientos .cardLanzamientosVariados .contenedorImagen:hover .imagenLanzamiento,
+.seccionLanzamientos .cardPlaystation .contenedorImagen:hover .imagenLanzamiento,
+.seccionLanzamientos .cardXbox .contenedorImagen:hover .imagenLanzamiento,
+.seccionLanzamientos .cardNintendo .contenedorImagen:hover .imagenLanzamiento {
+  filter: blur(2px);
+}
+.seccionLanzamientos .cardLanzamientosVariados .contenedorImagen:hover .contenedorNota,
+.seccionLanzamientos .cardPlaystation .contenedorImagen:hover .contenedorNota,
+.seccionLanzamientos .cardXbox .contenedorImagen:hover .contenedorNota,
+.seccionLanzamientos .cardNintendo .contenedorImagen:hover .contenedorNota {
+  opacity: 1;
+}
+.seccionLanzamientos .cardLanzamientosVariados .contenedorImagen .nota,
+.seccionLanzamientos .cardPlaystation .contenedorImagen .nota,
+.seccionLanzamientos .cardXbox .contenedorImagen .nota,
+.seccionLanzamientos .cardNintendo .contenedorImagen .nota {
+  background-color: #E40017;
+  color: white;
+  font-size: 0.8rem;
+  padding: 16px 32px;
+  border-radius: 50px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
