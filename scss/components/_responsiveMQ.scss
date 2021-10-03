@@ -1,0 +1,28 @@
+@media only screen and (max-width: 600px) and (min-width: 100px)  {
+    /* INDEX */
+    .carousel-index, .titulo-h3{
+        display: none;
+    }
+    .tituloPrincipal{
+        margin-top: 120px !important;
+    }
+    section .contenedor-noticias .ul-noticias{
+        border-right: none;
+        padding-right: 0% !important;
+        margin-right: 10px;
+    }
+    .fotos-noticias {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+    .listas-podcast{
+        padding: 0px !important;
+        margin-left: 15px;
+    }
+    .video-podcast iframe{
+        width: 300px;
+        padding: 0%;
+    }
+}
