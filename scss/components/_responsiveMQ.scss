@@ -1,127 +1,169 @@
 @media only screen and (max-width: 576px) {
+
     /* INDEX */
-    .carousel-index, .titulo-h3{
+    .carousel-index,
+    .titulo-h3 {
         display: none;
     }
-    .tituloPrincipal{
+
+    .tituloPrincipal {
         margin-top: 120px !important;
     }
-    section .contenedor-noticias .ul-noticias{
+
+    section .contenedor-noticias .ul-noticias {
         border-right: none;
         padding-right: 0% !important;
         margin-right: 10px;
     }
+
     .fotos-noticias {
         width: 100%;
         height: auto;
         border-radius: 10px;
         margin-bottom: 10px;
-      }
-    .listas-podcast{
+    }
+
+    .listas-podcast {
         padding: 0px !important;
         margin-left: 15px;
     }
-    .video-podcast iframe{
+
+    .video-podcast iframe {
         width: 330px;
         padding: 0%;
     }
-    .newsletterTitulo{
+
+    .newsletterTitulo {
         font-size: 1rem;
     }
-   /* NOTICIAS */
-   .tituloPrincipalNoticia{
-       margin-top: 120px !important;
-       margin-bottom: 20px !important;
-   }
-   .primerTitular{
-       display: none;
-   }
-   
-   .seccionNovedades{
-       margin: 0px;
-   }
-   .seccionNovedades .tituloNovedades::after {
-    content: "";
-    position: absolute;
-    width: 260px;
-    height: 2px;
-    background-color: black;
-    top: 0.6em;
-    left: 100px;
-  }
-  .ul-noticias{
-      padding: 0px;
-  }
-   .imagen-noticias{
-       width: 100% !important;
-       height: auto !important;
-       margin: 15px;
-       left: 15px !important;
-        &:hover{
+
+    /* NOTICIAS */
+    .tituloPrincipalNoticia {
+        margin-top: 120px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .primerTitular {
+        display: none;
+    }
+
+    .seccionNovedades {
+        margin: 0px;
+    }
+
+    .seccionNovedades .tituloNovedades::after {
+        content: "";
+        position: absolute;
+        width: 260px;
+        height: 2px;
+        background-color: black;
+        top: 0.6em;
+        left: 100px;
+    }
+
+    .ul-noticias {
+        padding: 0px;
+    }
+
+    .imagen-noticias {
+        width: 100% !important;
+        height: auto !important;
+        margin: 15px;
+        left: 15px !important;
+
+        &:hover {
             filter: blur(0px) !important;
         }
-   }
-   /* ESPORTS */
-   .sectionEsportPrincipal .titularCaptions .spanEsport2  {
-    border-radius: 5px;
-    background-color: #E40017;
-    height: 15%;
-    width: 20%;
-  }
-  .sectionEsportPrincipal .titularCaptions .spanEsport3 {
-    border-radius: 5px;
-    background-color: #E40017;
-    height: 12%;
-    width: 12%;
-  }
-  .sectionEsport .tituloEsport::after {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 2px;
-    background-color: black;
-    top: 0.6em;
-    left: 310px;
-  }
-  .sectionEsport .tituloEsport::before {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 2px;
-    background-color: black;
-    top: 0.6em;
-    right: 310px;
-  }
-  .marginContenedor{
-      margin: 0 !important;
-  }
-  .imgEsport{
-      width: 120% !important;
-  }
-  .tituloNoticiaEsport{
-      margin-top: 15px;
-  }
-  .sectionEsport .subnoticias::after {
-    content: "";
-    position: absolute;
-    width: 140px;
-    height: 2px;
-    background-color: black;
-    top: 0.6em;
-    left: 240px;
-  }
-  .sectionEsport .subnoticias::before {
-    content: "";
-    position: absolute;
-    width: 140px;
-    height: 2px;
-    background-color: black;
-    top: 0.6em;
-    right: 240px;
-  }
-  /* LANZAMIENTOS */
-  .tituloLanzamientosPrincipales{
-      margin-top: 120px !important;
-      margin-bottom: 20px !important;
-  }
+    }
+
+    /* ESPORTS */
+    .sectionEsportPrincipal .titularCaptions .spanEsport2 {
+        border-radius: 5px;
+        background-color: #E40017;
+        height: 15%;
+        width: 20%;
+    }
+
+    .sectionEsportPrincipal .titularCaptions .spanEsport3 {
+        border-radius: 5px;
+        background-color: #E40017;
+        height: 12%;
+        width: 12%;
+    }
+
+    .sectionEsport .tituloEsport::after {
+    
+        width: 80px !important;
+        left: 280px !important;
+    }
+
+    .sectionEsport .tituloEsport::before {
+        width: 80px !important;
+        right: 280px !important;
+    }
+
+    .marginContenedor {
+        margin: 0 !important;
+    }
+
+    .imgEsport {
+        width: 120% !important;
+    }
+
+    .tituloNoticiaEsport {
+        margin-top: 15px;
+    }
+
+    .sectionEsport .subnoticias::after {  
+        width: 100px;
+        left: 240px;
+    }
+
+    .sectionEsport .subnoticias::before {
+        width: 100px;
+        right: 240px;
+    }
+
+    /* LANZAMIENTOS */
+    .tituloLanzamientosPrincipales {
+        margin-top: 120px !important;
+        margin-bottom: 60px !important;
+    }
+
+    .cardLanzamientosVariados,
+    .cardPlaystation,
+    .cardXbox,
+    .cardNintendo {
+        width: 30rem !important;
+        margin-top: 25px;
+    }
+
+    .titulosExclusivosPSN::after {
+        left: 240px !important;
+        width: 100px !important;
+    }
+
+    .titulosExclusivosXbox::after {
+        left: 170px !important;
+        width: 170px !important;
+    }
+
+    .titulosExclusivosNintendo::after {
+        left: 215px !important;
+        width: 125px !important;
+    }
+.titulosExclusivosPSN,.titulosExclusivosXbox,.titulosExclusivosNintendo{
+    margin-top: 50px !important;
+}
+    .tituloLanzamientos {
+        &::after {
+            width: 50px !important;
+            left: 310px !important;
+        }
+
+        &::before {
+            width: 50px !important;
+            right:310px !important;
+        }
+    }
 }
