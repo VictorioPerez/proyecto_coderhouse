@@ -695,7 +695,7 @@ section .contenedor-noticias .item img {
   border-radius: 50px;
 }
 
-@media only screen and (max-width: 600px) and (min-width: 100px) {
+@media only screen and (max-width: 576px) {
   /* INDEX */
   .carousel-index, .titulo-h3 {
     display: none;
@@ -724,8 +724,123 @@ section .contenedor-noticias .item img {
   }
 
   .video-podcast iframe {
-    width: 300px;
+    width: 330px;
     padding: 0%;
+  }
+
+  .newsletterTitulo {
+    font-size: 1rem;
+  }
+
+  /* NOTICIAS */
+  .tituloPrincipalNoticia {
+    margin-top: 120px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .primerTitular {
+    display: none;
+  }
+
+  .seccionNovedades {
+    margin: 0px;
+  }
+
+  .seccionNovedades .tituloNovedades::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 2px;
+    background-color: black;
+    top: 0.6em;
+    left: 100px;
+  }
+
+  .ul-noticias {
+    padding: 0px;
+  }
+
+  .imagen-noticias {
+    width: 100% !important;
+    height: auto !important;
+    margin: 15px;
+    left: 15px !important;
+  }
+  .imagen-noticias:hover {
+    filter: blur(0px) !important;
+  }
+
+  /* ESPORTS */
+  .sectionEsportPrincipal .titularCaptions .spanEsport2 {
+    border-radius: 5px;
+    background-color: #E40017;
+    height: 15%;
+    width: 20%;
+  }
+
+  .sectionEsportPrincipal .titularCaptions .spanEsport3 {
+    border-radius: 5px;
+    background-color: #E40017;
+    height: 12%;
+    width: 12%;
+  }
+
+  .sectionEsport .tituloEsport::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    top: 0.6em;
+    left: 310px;
+  }
+
+  .sectionEsport .tituloEsport::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    top: 0.6em;
+    right: 310px;
+  }
+
+  .marginContenedor {
+    margin: 0 !important;
+  }
+
+  .imgEsport {
+    width: 120% !important;
+  }
+
+  .tituloNoticiaEsport {
+    margin-top: 15px;
+  }
+
+  .sectionEsport .subnoticias::after {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 2px;
+    background-color: black;
+    top: 0.6em;
+    left: 240px;
+  }
+
+  .sectionEsport .subnoticias::before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 2px;
+    background-color: black;
+    top: 0.6em;
+    right: 240px;
+  }
+
+  /* LANZAMIENTOS */
+  .tituloLanzamientosPrincipales {
+    margin-top: 120px !important;
+    margin-bottom: 20px !important;
   }
 }
 
