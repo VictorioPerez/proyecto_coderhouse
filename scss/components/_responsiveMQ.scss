@@ -77,6 +77,9 @@
     }
 
     /* ESPORTS */
+    .tituloPrincipalNoticiaEsport{
+        margin-top: 120px !important;
+    }
     .sectionEsportPrincipal .titularCaptions .spanEsport2 {
         border-radius: 5px;
         background-color: #E40017;
@@ -92,7 +95,7 @@
     }
 
     .sectionEsport .tituloEsport::after {
-    
+
         width: 80px !important;
         left: 280px !important;
     }
@@ -114,7 +117,7 @@
         margin-top: 15px;
     }
 
-    .sectionEsport .subnoticias::after {  
+    .sectionEsport .subnoticias::after {
         width: 100px;
         left: 240px;
     }
@@ -152,18 +155,22 @@
         left: 215px !important;
         width: 125px !important;
     }
-.titulosExclusivosPSN,.titulosExclusivosXbox,.titulosExclusivosNintendo{
-    margin-top: 50px !important;
-}
+
+    .titulosExclusivosPSN,
+    .titulosExclusivosXbox,
+    .titulosExclusivosNintendo {
+        margin-top: 50px !important;
+    }
+
     .tituloLanzamientos {
         &::after {
             width: 50px !important;
-            left: 310px !important;
+            left: 320px !important;
         }
 
         &::before {
             width: 50px !important;
-            right:310px !important;
+            right: 320px !important;
         }
     }
 }
