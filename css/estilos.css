@@ -867,5 +867,86 @@ section .contenedor-noticias .item img {
     right: 320px !important;
   }
 }
+@media only screen and (max-width: 812px) {
+  /* INDEX */
+  .listas-podcast {
+    margin-left: 120px !important;
+  }
+
+  /* NOTICIAS */
+  .titularTitulo {
+    font-size: 0.5rem !important;
+  }
+
+  .seccionNovedades .tituloNovedades::after {
+    width: 400px;
+    left: 120px;
+  }
+
+  /* ESPORT */
+  .sectionEsport .tituloEsport::after {
+    width: 150px !important;
+    left: 500px !important;
+  }
+
+  .sectionEsport .tituloEsport::before {
+    width: 150px !important;
+    right: 500px !important;
+  }
+
+  .sectionEsport .subnoticias::after {
+    width: 250px !important;
+    left: 375px !important;
+  }
+
+  .sectionEsport .subnoticias::before {
+    width: 250px !important;
+    right: 375px !important;
+  }
+
+  /* LANZAMIENTOS */
+  .tituloLanzamientosPrincipales {
+    margin-top: 120px !important;
+    margin-bottom: 60px !important;
+  }
+
+  .cardLanzamientosVariados,
+.cardPlaystation,
+.cardXbox,
+.cardNintendo {
+    width: 30rem !important;
+    margin-top: 25px;
+  }
+
+  .titulosExclusivosPSN::after {
+    left: 270px !important;
+    width: 360px !important;
+  }
+
+  .titulosExclusivosXbox::after {
+    left: 200px !important;
+    width: 400px !important;
+  }
+
+  .titulosExclusivosNintendo::after {
+    left: 250px !important;
+    width: 400px !important;
+  }
+
+  .titulosExclusivosPSN,
+.titulosExclusivosXbox,
+.titulosExclusivosNintendo {
+    margin-top: 50px !important;
+  }
+
+  .tituloLanzamientos::after {
+    width: 150px !important;
+    left: 510px !important;
+  }
+  .tituloLanzamientos::before {
+    width: 150px !important;
+    right: 510px !important;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
